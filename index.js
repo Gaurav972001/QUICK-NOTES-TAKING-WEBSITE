@@ -63,7 +63,7 @@ let clearAll = document.getElementById("clearAll");
 clearAll.addEventListener("click", function (e) {
     localStorage.clear();
     let notesElm = document.getElementById("notes");
-    notesElm.innerHTML = "";
+    notesElm.innerHTML = `<h2 style="text-align:center; color:red">You haven't added any notes yet</h3>`;
 });
 
 let search = document.getElementById("searchTxt");
