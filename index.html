@@ -23,7 +23,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                 </ul>
                 <form class="d-flex">
@@ -34,13 +34,18 @@
             </div>
         </div>
     </nav>
+
     <h1 style="margin: 10px; text-align: center;">WELCOME TO QUICK NOTES</h1>
     <div class="container my-3">
         <div class="card">
             <div class="card-body">
                 <h5 class="card-title">Add a note</h5>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Title</span>
+                    <input type="text" id="addTitle" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                  </div>
                 <div class="mb-3">
-                    <textarea class="form-control" id="addTxt" rows="3"></textarea>
+                    <textarea class="form-control" id="addTxt" rows="3" placeholder="Enter notes"></textarea>
                 </div>
                 <button class="btn btn-primary" id="addBtn">Add note</button>
                 <button class="btn btn-danger" id="clearAll" style="margin-left: 20px;">Delete all notes</button>
